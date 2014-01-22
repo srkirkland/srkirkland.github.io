@@ -28,7 +28,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -44,7 +44,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">About</a></li>
+            <li class="active"><a href="#about">About</a></li>
             <li>
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Open Source <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -67,7 +67,7 @@
     <div class="container">
 
     <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron text-center">
+    <div id="about" class="jumbotron text-center">
         <h1>Scott Kirkland</h1>
         <p class="lead">Passionate Software Developer who enjoys writing advanced web applications and loves open source</p>
         <p>Occasional rock climber, hiker, musician, terrible but enthusiastic cook</p>
