@@ -48,16 +48,17 @@
             <li>
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Open Source <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                <li><a href="#">Project1</a></li>
-                <li><a href="#">Project2</a></li>
-                <li><a href="#">p3</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#dataannotations">Data Annotations Extensions</a></li>
+                <li><a href="#mvc-html">MvcHtml5</a></li>
+                <li><a href="#badges">Badges</a></li>
                 </ul>
             </li>
-            <li><a href="#contact">Projects</a></li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                <li><a href="#ace">Course Evaluations</a></li>
+                <li><a href="#opp">Pre Purchasing</a></li>
+                </ul>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -74,7 +75,7 @@
 
 
     <div>
-        <h1>Open Source <small>A brief tour of some open source projects I've worked on</small></h1><hr/>
+        <h1 id="open-source">Open Source <small>A brief tour of some open source projects I've worked on</small></h1><hr/>
         <p class="lead">Most of the open source projects I've written can be viewed at either 
             <a href="https://github.com/srkirkland">https://github.com/srkirkland</a> (Personal) or 
             <a href="https://github.com/ucdavis">https://github.com/ucdavis</a> (Professional)
@@ -83,9 +84,9 @@
         <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">
-              <a href="http://dataannotationsextensions.org/">
+              <span id="dataannotations">
                 Data Annotations Extensions 
-              </a>
+              </span>
           </h2>
           <p class="lead">
             Popular open source web validation project I created that has almost 200,000 downloads, 
@@ -109,15 +110,16 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">
-              <a id="mvc-html">
+              <span id="mvc-html">
                 Html5MvcTemplates 
-              </a>
+              </span>
           </h2>
           <p class="lead">
             Small but well used library I created which adds HTML5 input types, such as Email, Tel and Url, to ASP.NET MVC  
           </p>
           <p class="lead">
-            Was the first ever pull request into aspnetwebstack (i.e. the first community contribution to ASP.NET Web) after <a href="http://aspnetwebstack.codeplex.com/SourceControl/network/forks/migueldeicaza/MyFirstFork/contribution/2028"> being converted by Miguel De Icaza</a>
+            Was the first ever pull request into aspnetwebstack (i.e. the first community contribution to ASP.NET Web) after <a href="http://aspnetwebstack.codeplex.com/SourceControl/network/forks/migueldeicaza/MyFirstFork/contribution/2028"> being converted by Miguel De Icaza</a>.
+            Also used on the primary ASP.NET MVC example application <a href="http://www.hanselman.com/blog/NerdDinnerBeingUpdatedToMVC3WithRazorHTML5GeoLocationEFCodeFirstJQueryMobileYepNopeAndModernizrAndAFixedMobileDeviceCapabilitiesViewEngine.aspx">Nerd Dinner</a> and listed on the offical asp.net page as one of their favorite open source projects (<a href="http://www.asp.net/mvc/open-source">http://www.asp.net/mvc/open-source</a>).
           </p>
           <p>
             Source Code at <a href="https://github.com/srkirkland/Html5MvcTemplates">https://github.com/srkirkland/Html5MvcTemplates</a>
@@ -131,9 +133,9 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">
-              <a id="badges">
+              <span id="badges">
                 Badges 
-              </a>
+              </span>
           </h2>
           <p class="lead">
             Sole developer on an ambitious digital badging system for higher education which will help students describe their experiences in richer detail than possible with letter grades.
@@ -152,7 +154,55 @@
         </div>
       </div>
     </div>
-
+    <h1 id="projects">Projects <small>Some of my favorite work projects</small></h1><hr/>
+        <p class="lead">Any work that I can make open source is kept at <a href="https://github.com/ucdavis">https://github.com/ucdavis</a>,
+            however most of my work is closed source.  Hopefully the screenshots and descriptions below will suffice.
+        </p>
+    <hr/>
+    <div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading">
+            <span id="ace">
+                Automated Course Evaluations (ACE)
+            </span>
+        </h2>
+        <p class="lead">
+            Architect and lead developer for the UC Davis Course Evaluation system, which is replacing an old, slow and inaccurate Scantron based process.
+            Developed in less than a year and designed for extreme flexibility, the system served over 21,500 students evaluating almost 1,500 classes in its first quarter of usage (Fall 2013).
+        </p>
+        <p class="lead">
+            The ACE system utilizes Windows Azure Cloud Services to efficiently scale to meet the demands of the student body trying to fill out evaluations all in the final week of the quarter.
+        </p>
+    </div>
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" alt="Course Evaluations" src="img/ace.png" />
+    </div>
+    </div>
+    <hr/>
+    <div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading">
+            <span id="opp">
+                PrePurchasing
+            </span>
+        </h2>
+        <p class="lead">
+            Architect and lead developer for the UC Davis PrePurchasing system, which standardizes the pre-purchasing process to allow users to submit order requests, which can be almost anything, including travel, computer supplies, and lab equipment.
+            Orders are all routed through the proper approval chain, modified all along the way as comments are added, files are attached, and account numbers are generated.
+            Finalized orders can be pushed through an API into the campus accounting system for easy processing.
+        </p>
+        <p class="lead">
+            In the year and a half since being deployed, the PrePurchasing system has handled over $50,000,000 in orders from thousands of campus personnel across hundreds of different departments.
+        </p>
+        <p>
+            You can <a href="http://ucdavis.github.io/Purchasing/screenshots.html">See more screenshots here</a> or go to the infomational homepage at <a href="http://ucdavis.github.io/Purchasing/">http://ucdavis.github.io/Purchasing/</a> to learn more general info. 
+        </p>
+    </div>
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" alt="Pre Purchasing Line Items" src="img/prepurchasing.jpg" />
+    </div>
+    </div>
+    
     </div> <!-- /container -->
 
 
